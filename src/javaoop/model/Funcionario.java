@@ -11,20 +11,20 @@ public class Funcionario {
 
     private static DecimalFormat df = new DecimalFormat("#.##");
 
-    public Funcionario(String n, String s, double sal) {
-       nome = n;
-       sexo = s;
+    public Funcionario(String nome, String sexo, double salario) {
+       this.nome = nome;
+       this.sexo = sexo;
 
        df.setRoundingMode(RoundingMode.UP);
-       String format = df.format(sal).replace(",",".");
-       salario = Double.valueOf(format);
+       String format = df.format(salario).replace(",",".");
+       this.salario = Double.valueOf(format);
     }
 
     public String getNome() {
         return nome.toUpperCase();
     }
 
-    public String getSexo() {
+    public String getSexo(){
         return sexo;
     }
 

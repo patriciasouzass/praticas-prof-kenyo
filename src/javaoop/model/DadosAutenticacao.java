@@ -5,9 +5,9 @@ public class DadosAutenticacao {
     private String login;
     private String senha;
 
-    public DadosAutenticacao(String l, String s){
-        login = l;
-        senha = s;
+    public DadosAutenticacao(String login, String senha){
+        this.login = login;
+        this.senha = senha;
     }
 
     public String getLogin() {

@@ -10,10 +10,6 @@ public class Cliente implements UsuarioAutenticavel{
 
     @Override
     public boolean autentica(String login, String senha) {
-
-        if (login.equals(dadosAutenticacao.getLogin()) && senha.equals(dadosAutenticacao.getSenha()))
-            return true;
-        else return false;
-
+        return login.equals(dadosAutenticacao.getLogin()) && senha.equals(dadosAutenticacao.getSenha());
     }
 }

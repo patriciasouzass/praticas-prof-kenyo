@@ -1,4 +1,4 @@
-package javaoop;
+package javaoop.excecoes;
 
 import javaoop.model.*;
 
