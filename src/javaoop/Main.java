@@ -1,5 +1,7 @@
 package javaoop;
 
+import javaoop.model.*;
+
 import java.io.*;
 
 public class Main {

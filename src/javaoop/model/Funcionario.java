@@ -1,4 +1,4 @@
-package javaoop;
+package javaoop.model;
 
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
@@ -16,7 +16,7 @@ public class Funcionario {
        sexo = s;
 
        df.setRoundingMode(RoundingMode.UP);
-       String format = df.format(sal);
+       String format = df.format(sal).replace(",",".");
        salario = Double.valueOf(format);
     }
 
