@@ -1,4 +1,4 @@
-package javaoop.excecoes;
+package javaoop.lesson4.excecoes;
 
 public class Classe2 {
 

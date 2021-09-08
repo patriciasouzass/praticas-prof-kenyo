@@ -1,4 +1,4 @@
-package javaoop.model;
+package javaoop.lesson4.model;
 
 public class DadosAutenticacao {
 

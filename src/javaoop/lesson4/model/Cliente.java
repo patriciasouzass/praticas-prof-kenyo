@@ -1,11 +1,10 @@
-package javaoop.model;
+package javaoop.lesson4.model;
 
-public class Desenvolvedor extends Funcionario implements UsuarioAutenticavel{
+public class Cliente implements UsuarioAutenticavel {
 
     private DadosAutenticacao dadosAutenticacao;
 
-    public Desenvolvedor(String nome, String sexo, double salario, String login, String senha) {
-        super(nome, sexo, salario);
+    public Cliente(String login, String senha){
         dadosAutenticacao = new DadosAutenticacao(login, senha);
     }
 

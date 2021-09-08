@@ -1,6 +1,6 @@
-package javaoop.excecoes;
+package javaoop.lesson4.excecoes;
 
-import javaoop.model.Funcionario;
+import javaoop.lesson4.model.Funcionario;
 
 public class Classe3 {
 
@@ -9,7 +9,7 @@ public class Classe3 {
     public void metod3() throws NullPointerException{
         System.out.println("executando o método 3");
 
-        System.out.println("salário do direto: " + funcionario.getSalario());
+        System.out.println("salário do diretor: " + funcionario.getSalario());
 
         System.out.println("finalizando o método 3");
     }

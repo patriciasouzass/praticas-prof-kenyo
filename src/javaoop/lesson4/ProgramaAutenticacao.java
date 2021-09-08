@@ -1,6 +1,7 @@
-package javaoop;
+package javaoop.lesson4;
 
-import javaoop.model.*;
+import javaoop.lesson4.model.Cliente;
+import javaoop.lesson4.model.Desenvolvedor;
 
 public class ProgramaAutenticacao {
 

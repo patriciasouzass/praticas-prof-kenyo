@@ -1,6 +1,6 @@
-package javaoop.util;
+package javaoop.lesson4.util;
 
-import javaoop.model.Funcionario;
+import javaoop.lesson4.model.Funcionario;
 
 import java.io.*;
 

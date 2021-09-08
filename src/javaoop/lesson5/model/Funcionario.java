@@ -1,4 +1,4 @@
-package javaoop.model;
+package javaoop.lesson5.model;
 
 import java.math.RoundingMode;
 import java.text.DecimalFormat;

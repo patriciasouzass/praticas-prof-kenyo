@@ -1,6 +1,8 @@
-package javaoop.model;
+package javaoop.lesson4.model;
 
-public class Vendedor extends Funcionario{
+import javaoop.lesson4.model.Funcionario;
+
+public class Vendedor extends Funcionario {
 
     private double faturamento;
 

@@ -1,10 +1,10 @@
-package javaoop;
+package javaoop.lesson4;
 
-import javaoop.model.Desenvolvedor;
-import javaoop.model.Funcionario;
-import javaoop.model.Gerente;
-import javaoop.model.Vendedor;
-import javaoop.util.ArquivoUtil;
+import javaoop.lesson4.model.Desenvolvedor;
+import javaoop.lesson4.model.Funcionario;
+import javaoop.lesson4.model.Gerente;
+import javaoop.lesson4.model.Vendedor;
+import javaoop.lesson4.util.ArquivoUtil;
 
 import java.io.IOException;
 

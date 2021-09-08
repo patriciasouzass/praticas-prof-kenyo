@@ -3,3 +3,12 @@ Funcionario{nome='Patricia', sexo='F', salario=5800.0}
 Funcionario{nome='Marcela', sexo='F', salario=8900.0}      445.0
 Funcionario{nome='Cleiton', sexo='M', salario=2300.0}      50.0      2350.0
 Funcionario{nome='Patricia', sexo='F', salario=17000.0}
+Funcionario{nome='Patricia', sexo='F', salario=60000.0}
+Funcionario{nome='Patricia', sexo='F', salario=60000.0}
+Funcionario{nome='Patricia', sexo='F', salario=60000.0}
+Funcionario{nome='Patricia', sexo='F', salario=60000.0}
+Funcionario{nome='Patricia', sexo='F', salario=60000.0}
+Funcionario{nome='Patricia', sexo='F', salario=60000.0}
+Funcionario{nome='Patricia', sexo='F', salario=60000.0}
+Funcionario{nome='Patricia', sexo='F', salario=60000.0}
+Funcionario{nome='Patricia', sexo='F', salario=60000.0}
