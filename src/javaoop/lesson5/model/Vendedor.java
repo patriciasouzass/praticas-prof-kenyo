@@ -1,11 +1,13 @@
 package javaoop.lesson5.model;
 
+import java.text.ParseException;
+
 public class Vendedor extends Funcionario {
 
     private double faturamento;
 
-    public Vendedor(String nome, String sexo, double salario, double faturamento){
-        super (nome, sexo, salario);
+    public Vendedor(String nome, String sexo, double salario, double faturamento, String cpf) throws ParseException {
+        super (nome, sexo, salario, cpf);
         this.faturamento = faturamento;
     }
 

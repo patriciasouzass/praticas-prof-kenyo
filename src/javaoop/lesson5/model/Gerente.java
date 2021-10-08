@@ -1,9 +1,11 @@
 package javaoop.lesson5.model;
 
+import java.text.ParseException;
+
 public class Gerente extends Funcionario {
 
-    public Gerente(String nome, String sexo, double salario){
-        super(nome, sexo, salario);
+    public Gerente(String nome, String sexo, double salario, String cpf) throws ParseException {
+        super(nome, sexo, salario, cpf);
     }
 
     public double getGratificacao(){

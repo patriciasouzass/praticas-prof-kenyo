@@ -2,12 +2,15 @@ package javaoop.lesson5.model;
 
 import javaoop.lesson5.exception.LoginException;
 
+import javax.swing.*;
+import java.text.ParseException;
+
 public class Desenvolvedor extends Funcionario implements UsuarioAutenticavel {
 
     private DadosAutenticacao dadosAutenticacao;
 
-    public Desenvolvedor(String nome, String sexo, double salario, String login, String senha) {
-        super(nome, sexo, salario);
+    public Desenvolvedor(String nome, String sexo, double salario, String login, String senha, String cpf) throws ParseException {
+        super(nome, sexo, salario, cpf);
         dadosAutenticacao = new DadosAutenticacao(login, senha);
     }
 

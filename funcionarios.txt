@@ -12,3 +12,8 @@ Funcionario{nome='Patricia', sexo='F', salario=60000.0}
 Funcionario{nome='Patricia', sexo='F', salario=60000.0}
 Funcionario{nome='Patricia', sexo='F', salario=60000.0}
 Funcionario{nome='Patricia', sexo='F', salario=60000.0}
+Funcionario{nome='Patricia', sexo='F', salario=60000.0}
+Funcionario{nome='Patricia', sexo='F', salario=60000.0}
+Funcionario{nome='Patricia', sexo='F', salario=60000.0, cpf=null}
+Funcionario{nome='Patricia', sexo='F', salario=60000.0, cpf=null}
+Funcionario{nome='Patricia', sexo='F', salario=60000.0, cpf=156.241.157-16}
