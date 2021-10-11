@@ -26,4 +26,19 @@ public class AnuncioPersistence {
             em.getTransaction().rollback();
         }
     }
+
+    public void atualiza(Anuncio anuncio){
+        em.getTransaction().begin();
+        Anuncio anuncioParaSerAtualizado = em.find(Anuncio.class, anuncio.getCodigo());
+        anuncioParaSerAtualizado.setPreco(anuncio.getPreco());
+        anuncioParaSerAtualizado.setTitulo(anuncio.getTitulo());
+        em.getTransaction().commit();
+    }
+
+    public void deleta(Long id){
+        em.getTransaction().begin();
+        Anuncio a = em.find(Anuncio.class, id);
+        em.remove(a);
+        em.getTransaction().commit();
+    }
 }

@@ -15,11 +15,6 @@ public class VendedorService {
         this.vendedorPersistence = vendedorPersistence;
     }
 
-    public VendedorService(VendedorPersistence vendedorPersistence, Endereco endereco) {
-        this.vendedorPersistence = vendedorPersistence;
-        this.endereco = endereco;
-    }
-
     private String codigoUnico() {
         return "MLB" + ThreadLocalRandom.current().nextInt(100, 999);
     }
@@ -53,7 +48,7 @@ public class VendedorService {
     }
 
 
-    public void deleta(String codigo) {
-        vendedorPersistence.exclui(codigo);
+    public void deleta(Long id) {
+        vendedorPersistence.deleta(id);
     }
 }

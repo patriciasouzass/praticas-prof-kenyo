@@ -1,10 +1,12 @@
 package dao;
 
+import entity.FormaPagamento;
 import entity.Venda;
 import util.JPAUtil;
 
 import javax.persistence.EntityManager;
 import javax.persistence.TypedQuery;
+import java.math.BigDecimal;
 
 
 public class VendaPersistence {
@@ -32,7 +34,8 @@ public class VendaPersistence {
     public void atualiza(Venda venda) {
         em.getTransaction().begin();
         Venda vendaParaSerAtualizada = em.find(Venda.class, venda.getId());
-        vendaParaSerAtualizada.setFormaPagamento(venda.getFormaPagamento());
+        vendaParaSerAtualizada.setValorTotal(new BigDecimal(450));
+        vendaParaSerAtualizada.setFormaPagamento(FormaPagamento.A_PRAZO);
         em.getTransaction().commit();
     }
 

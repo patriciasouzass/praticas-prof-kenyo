@@ -17,8 +17,7 @@ public class Vendedor {
     @OneToMany(mappedBy = "vendedor", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<Endereco> enderecos;
 
-    public Vendedor() {
-    }
+    public Vendedor() {    }
 
     public Vendedor(String codigo, String cpf, String nome, List<Endereco> enderecos) {
         this.codigo = codigo;
@@ -42,5 +41,10 @@ public class Vendedor {
     public Vendedor(String cpf, String nome){
         this.cpf = cpf;
         this.nome = nome;
+    }
+
+    @Override
+    public String toString() {
+        return this.codigo.concat(" -- " + this.nome).concat(" -- " + this.cpf);
     }
 }

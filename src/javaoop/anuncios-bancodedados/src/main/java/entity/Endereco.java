@@ -24,7 +24,6 @@ public class Endereco {
     public Endereco(){}
 
     public Endereco(String cep, String logradouro, String complemento, int numero, String uf, String cidade, Vendedor vendedor) {
-        super();
         this.cep = cep;
         this.logradouro = logradouro;
         this.complemento = complemento;
@@ -35,7 +34,6 @@ public class Endereco {
     }
 
     public Endereco(Long id, String cep, String logradouro, String complemento, int numero, String uf, String cidade) {
-        super();
         this.id = id;
         this.cep = cep;
         this.logradouro = logradouro;

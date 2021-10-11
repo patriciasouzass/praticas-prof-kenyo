@@ -12,21 +12,23 @@ import java.time.LocalDate;
 public class Anuncio {
 
     @Id
-    //   @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String codigo;
     private String titulo;
     private BigDecimal preco;
-  //  @Column(name = "data_anuncio")
+    @Column(name = "data_anuncio")
     private LocalDate dataAnuncio;
-   // @Column(name = "num_vendas")
-    private String numeroVendas;
+    @Column(name = "num_vendas")
+    private Integer numeroVendas;
     @ManyToOne
+    @JoinColumn(name = "codigo_vendedor")
     private Vendedor vendedor;
 
     public Anuncio() {
     }
 
-    public Anuncio(String titulo, BigDecimal preco, LocalDate dataAnuncio, String numeroVendas, Vendedor vendedor) {
+    public Anuncio(String codigo, String titulo, BigDecimal preco, LocalDate dataAnuncio, Integer numeroVendas, Vendedor vendedor) {
+        this.codigo = codigo;
         this.titulo = titulo;
         this.preco = preco;
         this.dataAnuncio = dataAnuncio;

@@ -17,8 +17,10 @@ public class VendedorPersistence {
 
     public void atualiza(Vendedor vendedor) {
         em.getTransaction().begin();
-        vendedor.setCpf(vendedor.getCpf());
-        vendedor.setNome(vendedor.getNome());
+        Vendedor vendedorParaSerAtualizado = em.find(Vendedor.class, vendedor.getCodigo());
+        vendedorParaSerAtualizado.setNome(vendedor.getNome());
+        vendedorParaSerAtualizado.setCpf(vendedor.getCpf());
+        vendedorParaSerAtualizado.setEnderecos(vendedor.getEnderecos());
         em.getTransaction().commit();
     }
 
@@ -41,11 +43,11 @@ public class VendedorPersistence {
         }
     }
 
-    public void exclui(String codigo) {
+    public void deleta(Long id) {
         try {
             em.getTransaction().begin();
-            Vendedor vendedorDeletado = em.find(Vendedor.class, codigo);
-            em.remove(vendedorDeletado);
+            Vendedor v = em.find(Vendedor.class, id);
+            em.remove(v);
             em.getTransaction().commit();
         } catch (RuntimeException e) {
             em.getTransaction().rollback();
