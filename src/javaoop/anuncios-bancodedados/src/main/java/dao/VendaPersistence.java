@@ -1,17 +1,11 @@
 package dao;
 
-import entity.Anuncio;
-import entity.FormaPagamento;
 import entity.Venda;
-import entity.Vendedor;
 import util.JPAUtil;
 
 import javax.persistence.EntityManager;
 import javax.persistence.TypedQuery;
 
-import java.math.BigDecimal;
-import java.time.LocalDate;
-import java.util.List;
 
 public class VendaPersistence {
 
@@ -35,11 +29,6 @@ public class VendaPersistence {
         return em.find(Venda.class, id);
     }
 
-    public List<Venda> lista(){
-        TypedQuery<Venda> qry = em.createQuery("from Venda", Venda.class); //from Venda >> Classe
-        return qry.getResultList();
-    }
-
     public void atualiza(Venda venda) {
         em.getTransaction().begin();
         Venda vendaParaSerAtualizada = em.find(Venda.class, venda.getId());
@@ -61,18 +50,5 @@ public class VendaPersistence {
         Venda venda = qry.getSingleResult();
         return venda;
 
-    }
-
-
-    public static void main(String[] args) {
-        VendaPersistence vendaPersistence = new VendaPersistence();
-        VendedorPersistence vendedorPersistence = new VendedorPersistence();
-
-        Vendedor vendedor = vendedorPersistence.get("MLB126");
-
-        AnuncioPersistence anuncioPersistence = new AnuncioPersistence();
-        Anuncio anuncio = anuncioPersistence.get("ML111");
-
-        vendaPersistence.insere(new Venda(LocalDate.now(), new BigDecimal(1000), FormaPagamento.A_PRAZO, vendedor, anuncio));
     }
 }
